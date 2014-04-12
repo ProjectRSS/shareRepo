@@ -1,0 +1,36 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    birch (0.0.8)
+    curb (0.8.5)
+    feedjira (1.2.0)
+      curb (~> 0.8.1)
+      loofah (~> 1.2.1)
+      sax-machine (~> 0.2.1)
+    loofah (1.2.1)
+      nokogiri (>= 1.4.4)
+    mime-types (1.25.1)
+    mini_portile (0.5.3)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    progressbar (0.21.0)
+    rubyzip (0.9.9)
+    sax-machine (0.2.1)
+      nokogiri (~> 1.6.0)
+    schiphol (1.0.1)
+      progressbar (>= 0.10.0)
+      rubyzip (~> 0.9.9)
+    treat (2.0.7)
+      birch
+      schiphol
+      yomu
+    yomu (0.1.10)
+      mime-types (~> 1.23)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  feedjira
+  nokogiri
+  treat
