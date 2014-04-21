@@ -10,7 +10,7 @@ feed.entries.each do |f|
 	doc = Nokogiri::HTML(rawEntry)
 	entry = ""
 	doc.css('p,h1').each do |e|
-		entry << e.content 
+		entry << e.content
 	end
 	article = paragraph entry
 	article.apply(:chunk, :segment, :tokenize, :parse)
